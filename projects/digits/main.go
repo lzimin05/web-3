@@ -1,7 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	fmt.Println("Hello, world!!!")
+	var a string
+	fmt.Scan(&a)
+	var max rune
+	for _, i := range a {
+		if i > max {
+			max = i
+		}
+	}
+	fmt.Printf("%c", max)
 }
